@@ -15,7 +15,7 @@ jobs:
     steps:
 
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       
       - name: Update readme
         run: .bin/get-and-patch-readme-repository-details.py

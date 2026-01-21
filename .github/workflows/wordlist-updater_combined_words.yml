@@ -17,7 +17,7 @@ jobs:
   update_combined_words:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
       - name: Generate combined_words.txt
         run: cd Discovery/Web-Content/ && cat common.txt raft-small-words* raft-medium-words* big.txt raft-large-words* | awk '! seen[$0]++' > combined_words.txt
       - name: Switching from HTTPS to SSH
